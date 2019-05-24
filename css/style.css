@@ -1,0 +1,336 @@
+/*===============================================
+                    Main Style
+================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+.t-border {
+    max-width: auto;
+    border-top: 4px solid lightgrey; 
+    padding-top: 50px;
+    padding-bottom: 50px;  
+                         /*section off different area*/
+    }
+  
+  #wrapper {                   /*makes content to be centered */
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  body {
+    margin: auto;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("sunrise.png");
+    background-color: lemonchiffon;
+    background-size: 275px;
+    background-repeat: repeat;
+    min-height:100%; 
+    position: relative; 
+    padding-bottom:[footer-height]; 
+    width: 75%;
+    
+  }
+ 
+  
+.banner :hover  {
+    transform: scale(1.2);
+
+ }   
+  
+
+  .banner {
+    width: 75%;
+    height: 2.0;
+    
+    
+  }
+
+  .banner > .banner-image  {
+    width: 700px;
+    display: flex;
+    margin-left: 29%;
+    align-content: center;
+    height: 2.0;
+    position: relative;
+    background-position: center;
+    
+  }
+
+  h1  {
+      text-align: center; 
+      font-size: 2.680rem;
+      color: rgb(251, 255, 1);
+      text-transform: uppercase;
+      font-weight: normal;
+      line-height: 1.3;
+      text-shadow: 0 1px 1px rgba(0,0,0, .8);
+      margin: 12px 0 0;
+      bottom: 560px;
+      left:100px;                        /* Moves title from the left  */
+      max-width: 110%;  
+      padding-bottom: 20px;  
+      padding-top: 30px; 
+      
+         
+  }
+
+ 
+
+  h2 {
+      font-size: 30px;
+      margin: 0 30px;
+      padding-bottom: 30px;
+      text-align: center; 
+      right: 20px;  
+      
+  }
+
+  .main-footer, .t-border {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    
+       
+  
+  }
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+  
+  .btn-primary {
+    margin-left: 80px;
+    
+
+  }
+
+  .primary-content {
+    
+    align-content: center;
+        
+  }
+
+/*================================================
+                 Base   Styles
+==================================================*/
+
+
+img  {   
+    max-width: 100%;
+    margin-top: 20px ;
+    border: solid 2px;
+    border-radius: 5px;
+    height: auto;
+    margin-left: 30px;
+} 
+
+
+.intro {
+    margin-right: 15px;
+    font-size: 1.25em;
+    line-height: 1.6;
+    padding: 30px 32px 20px 32px;
+    text-align: center; 
+    margin: 0 30px;
+    }
+
+
+.LVA-intro {
+    margin: 0 15px 10px 15px; 
+    font-size: 1.25em;
+    align-content: center;
+    padding: 20px 20px 20px 32px;
+    text-align: center; 
+}
+
+.lva-container {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center; 
+       
+}
+
+
+#contact {
+padding-top: 25px;
+padding-bottom: 20px;
+text-align: center; 
+align-content: space-around;
+
+}
+
+
+ .strip:hover  {
+    transform: scale(1.2);
+
+ }   
+
+  .gallery-wrapper, .t-border  {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    max-width: auto;
+    transition: ls;
+    flex-wrap: wrap;
+    flex: 0 70%;
+    justify-content: space-evenly;
+      
+  }
+  
+  
+  
+  
+  
+
+    /*==============================================
+                     Pseudo-elements
+    =================================================*/
+    .LVA-intro::first-letter {
+        float:left;
+        color: white;
+        padding: 5px 10px;
+        background: #384047;
+        margin: 5px 5px 0 0;
+        border-radius: 5px;
+        line-height: 1;
+        font-size: 80px;
+        background: #384047;
+        text-align: center; 
+    }
+    
+    
+    .intro::first-letter {
+        float:left;
+        font-size: 80px;
+        color: white;
+        padding: 5px 10px;
+        background: #384047;
+        margin: 0 1px;
+        border-radius: 5px;
+        line-height: 1;
+        text-align: center; 
+            }
+
+    
+    .intro::first-line{
+        font-weight:bold;
+        font-size: 1.3em;
+    } 
+
+    .clearfix::before,
+    after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    /*====================================================================
+                   Substring Matching Attribute Selector
+    ======================================================================*/
+
+    img[src*="art"] {
+        margin: 4px;
+        border: solid 2px;
+        width: 180px;
+        height: 140px;
+        border-radius: rounded;
+      }
+   
+ 
+
+/*======================================================
+                     Media Queries 
+========================================================*/
+@media all and (max-width: 1824px) {
+    .gallery-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    img  {   
+        max-width: 100%;
+       
+}
+
+    
+        #wrapper {                   /*makes content to be centered */
+            width: 920px;
+            margin: 0 auto;
+          }
+
+          
+    }
+
+
+
+
+/*=============================================================
++                  (iPhone 6+ and smaller)
++===============================================================*/
+
+@media all and (min-width: 319px), 
+all and (max-width: 910px)  {
+    .gallery-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+    }
+    img  {   
+        max-width: 120%;
+        line-height: 30%;
+        margin-right: 46px;
+        padding-left: 20;
+}
+
+#wrapper {                   /*makes content to be centered */
+    width: 90%;
+    margin: 0 auto;
+  }
+  .banner > .banner-image  {
+    align-self: center;
+    
+}
+
+h1 {
+   padding-right: 45px;
+   margin-right: 10px;
+}
+
+
+
+
+
+}
+
+
+@media (max-width: 700px ) {
+    .intro {
+              
+        padding: 30px 10px 20px 10px;
+        margin: 0;
+        }
+    
+        .banner > .banner-image  {
+            margin-left: 10px;}
+
+
+    .LVA-intro {
+     margin: 0 15px 10px 15px; 
+     padding: 20px 5px 20px 5px;
+                
+            }  
+            
+    
+}
